@@ -13,13 +13,30 @@
     <input type="text">
     <button>입력</button>
     <script>
-        /*
-        const number = Number(prompt('몇 명이 참가하나요?😊'));
-        console.log(typeof number);
-        */
 
+        const number = Number(prompt('😊몇 명이 참가하나요?'));
+        const $button = document.querySelector('button');
         const $input = document.querySelector('input');
-        console.log($input);
+        const $word = document.querySelector('#word');
+        let word; //제시어
+        let newWord; // 현재 단어
+
+        const onClickButton = () => {
+            if(!word){ //제시어가 비어 있는가?
+                // 비어있다.
+                word = newWord; // 입력한 단어가 제시어가 된다.
+                $word.textContent = word;
+            }else{
+                // 비어있지 않다
+            }
+        };
+        
+        const onInput = (event) => {
+            newWord = event.target.value;
+        }
+        
+        $button.addEventListener('click',onClickButton);
+        $input.addEventListener('input',onInput);
 
     </script>
 </body>
