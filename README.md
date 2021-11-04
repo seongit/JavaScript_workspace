@@ -9,3 +9,8 @@ https://github.com/seongit/TIL/tree/main/JavaScript/Let's%20Get%20IT%20%EC%9E%90
 
 ## 끝말잇기
 https://github.com/seongit/JavaScript_workspace/blob/main/webgame/word-replay.html
+
+<br>
+
+## 계산기
+https://github.com/seongit/JavaScript_workspace/blob/main/webgame/calculator.html
